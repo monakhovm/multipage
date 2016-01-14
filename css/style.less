@@ -1,0 +1,303 @@
+/* -------------------- Configs -------------------- */
+
+@default-margin: 50px;
+@default-color-grey: #ccc;
+@background-color: #506a85;
+@color: #506a85;
+@active-color: #00bc9c;
+@border-color: #e6e9ed;
+
+
+/* -------------------- Base -------------------- */
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+body {
+	color: @color;
+}
+
+.colored {
+	background: #ddd;
+}
+
+/* -------------------- Layout -------------------- */
+
+header {
+	background: @default-color-grey;
+	border-bottom: 1px solid #bbb;
+	line-height: 5vh;
+}
+
+.main-menu {
+	.navbar-default {
+		background: none;
+		border: none;
+		.navbar-brand {
+			padding-left: 0 ;
+		}
+		.navbar-form {
+			padding-right: 0;
+		}
+	}
+}
+
+.features-block {
+	.glyphicon {
+		color: green;
+		font-size: 50px;
+		margin-top: 25px;
+	}
+}
+
+.our-works {
+	background: @default-color-grey;
+	padding-bottom: 50px;
+}
+.gallery {
+	margin-top: @default-margin;
+}
+.description {
+	padding-bottom: @default-margin;
+}
+
+.white-descr {
+	background: #fff;
+	padding: @default-margin;
+}
+
+
+
+footer {
+	.logo {
+		-webkit-filter: brightness(500%);
+		width: 70%;
+	}
+	background-color: @background-color;
+	color: @default-color-grey;
+	h4 {
+		color: white;
+	}
+	.img-thumbnail {
+		padding: 0.1rem;
+		border-radius: 0;
+		border-color: @background-color;
+		background-color: @background-color;
+	}
+	.description {
+		padding-bottom: @default-margin;
+	}
+
+	.input-append {
+		border-radius: 3px;
+		background-color: @default-color-grey;
+		.search-query {
+			background: none;
+			border: 0;
+			outline: none;
+			margin-left: 3px;
+		}
+		button {
+			margin: 0.3rem 0;
+		}
+	}
+}
+
+/* -------------------- Modules -------------------- */
+.title {
+	width: 70%;
+	margin: @default-margin auto;
+}
+
+.carousel {
+	.jumbotron {
+		background: none;
+	}
+	.carousel-caption {
+		padding-top: 0;
+	}
+	.carousel-indicators {
+		bottom: -20px;
+		background: #fff;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		width: 200px;
+		li {
+			border: 0;
+			background-color: #506a85;
+
+			&.active {
+				background-color: #00bc9c;
+				width: 10px;
+				height: 10px;
+				margin: 1px;
+			}
+		}
+	}
+}
+
+.carousel-control:hover, .carousel-control:focus {
+	opacity: 1;
+}
+
+.carousel-control {
+	opacity: 1;
+	
+	.custom-control {
+		top: 0;
+		position: absolute;
+		bottom: 0;
+		height: 20px;
+		margin: auto;
+		opacity: 1;
+			&:before {
+			display: inline-block;
+			margin: 20px;
+		}
+	}
+}
+
+
+.menu-border {
+	color: @border-color;
+	margin: 0;
+}
+
+
+
+.prices {
+	margin-bottom: @default-margin;
+	.item {
+		.price-info {
+			background-color: #2F4052;
+			padding: 20px;
+			color: #fff;
+			.price-name {
+				margin-bottom: 0;
+			}
+				button {
+				display: block;
+				margin: 0 auto;
+			}
+			sub, sup {
+				color: #acb3ba;
+				font-size: 2rem;
+			}
+			sup {
+				top: -4.5rem;
+			}
+			.ammount {
+				font-size: 7rem;
+				font-weight: 400;
+			}	
+		}
+		.price-description {
+			background-color: #9eacbb;
+			border: 1px solid @border-color;
+			border-top: 0;
+			padding: 20px;
+				ul {
+				padding: 0;
+				margin: 0;
+			}
+
+			li {
+				list-style: none;
+				padding: 5px;
+			}
+				li:nth-last-child(n+2) {
+				border-bottom: 1px solid @border-color; 
+			}
+		}
+		
+	}
+}
+
+
+.questions-block {
+	padding-bottom: @default-margin;
+}
+
+
+.content {
+	position: relative;
+    margin: 10px 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+    	width: 30%;
+    	img {
+    		width: 100%;
+    	}
+    }
+}
+
+//----------------5-COLUMNS---------------
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+  
+.col-xs-1-5 {
+  width: 20%;
+  float: left;
+}
+  
+@media (min-width: 768px) {
+  .col-sm-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+  
+@media (min-width: 992px) {
+  .col-md-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+  
+@media (min-width: 1200px) {
+  .col-lg-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+
+.mega-hr {
+	margin-bottom: @default-margin;
+	border-top: 1px solid @color;
+	legend {
+		color: @color;
+		text-align: center;
+		border: none;
+		width: 60%;
+		i {
+			padding: 0 2rem;
+		}
+	}
+}
+
+.panel-default {
+	.panel-heading {
+		background: #fff;
+	}
+	.panel-title {
+		margin-bottom: 2rem;
+	}
+	.panel-body {
+		img {
+			height: 100%;
+		}
+	}
+	margin: @default-margin 0;
+}
